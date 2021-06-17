@@ -29,6 +29,12 @@ body {
     background-color: rgb(187, 255, 240);
     font-family: 'Lato-Light';
 }
+
+.my-nav-color {
+	background-color:#adb900;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
 .carousel-inner {
 	position: relative;
 }
@@ -44,20 +50,29 @@ body {
 	font-size: 1.4rem;
 	margin-top: 20px;
 	position: absolute;
-	left: 33%;
-    top: 50%;
-    width: 42%;
+	left: 37%;
+    top: 35%;
+    width: 30%;
+	color: #00ffff;
 }
 
 .geog-text {
-	padding: 1rem;
 	text-align: justify;
 	font-size: 1.4rem;
 	text-indent: 1.5rem;
+	
 }
 
-.g-map, .ed-pics {
-	width: 100%;
+.g-map {
+	
+	transform: translate(1%);
+
+	
+}
+
+.ed-pics {
+	
+	width: 95%;
 }
 
 .card-img-top {
@@ -70,6 +85,20 @@ body {
     height: 85px;
 }
 
+.kun-video {
+	width: 490px;
+	height: 285px;
+}
+.footer-nav a {
+font-size: 1.3rem;
+}
+#footer-nav {
+	background-color:#2d2b3d;
+}
+.footer-nav {
+	justify-content: flex-end;
+    padding-right: 30px;
+}
 
 .footer-links {
     list-style-type: none;
@@ -79,9 +108,132 @@ body {
 .footer-links a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: rgb(112, 0, 43);
+    color: #70002b;
+	font-weight: 600;
 }
 #kungrad {
 	text-decoration: none;
 	color: #fff8dc;
+}
+.bottom-menu {
+	background-color:cornflowerblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+@media screen and (max-width:320px) {
+	
+	.geo-title {
+		font-size: 1.2rem;
+		padding-top: 5px;
+	}
+	.geog-text {
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+
+	#kungrad {
+		font-size: .9rem;
+	}
+	.kun-video {
+		width: 90%;
+		height: 90%;
+	}
+}
+
+
+@media screen and (max-width:485px) {
+	
+	.geo-title {
+		font-size: 1.3rem;
+		padding-top: 5px;
+	}
+	.geog-text {
+		font-size: 1.1rem;
+		line-height: 1.2rem;
+	}
+
+	#kungrad {
+		font-size: 1rem;
+	}
+	
+	.kun-video {
+		width: 90%;
+		height: 90%;
+	}
+}
+
+@media screen and (max-width:768px) {
+	
+	.geo-title {
+		font-size: 1.6rem;
+		padding-top: 5px;
+	}
+	.geog-text {
+		font-size: 1.3rem;
+		line-height: 1.5rem;
+	}
+
+
+	#kungrad {
+		font-size: .96rem;
+	}
+
+	.footer-nav li a {
+		font-size: .94rem;
+	}
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	
+	.geo-title {
+		font-size: 1.9rem;
+		padding-top: 5px;
+	}
+	.geog-text {
+		font-size: 1.5rem;
+		line-height: 1.7rem;
+	}
+
+
+	/* #kungrad {
+		font-size: .96rem;
+	}
+
+	.footer-nav li a {
+		font-size: .94rem;
+	}
+	 */
+	
+}
+
+@media screen and (max-width:1200px) {
+	
+	.geo-title {
+		font-size: 1.7rem;
+		padding-top: 3px;
+	}
+	.geog-text {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+		padding-right: 0;
+	}
+
+	.g-map {
+	
+		transform: translate(1%);
+	
+		
+	}
+	
+	.ed-pics {
+		
+		transform: translateY(7%);
+	}
+	
+
+	
 }
