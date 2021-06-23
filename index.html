@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="shortcut icon" href="./images/my-logo.png" type="image/png">
     <link rel="stylesheet" href="./bootstrap-4.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./lightbox.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav class="container navbar navbar-expand-sm navbar-dark my-nav-color">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img class="rounded" src="./images/my-logo.png" alt="Kungrad" />
         </a>
         <button
@@ -28,16 +30,16 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a href="#" class="nav-link">Home</a>
+              <a href="./index.html" class="nav-link my-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">History</a>
+              <a href="./history.html" class="nav-link my-link">History</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Photos</a>
+              <a href="./photos.html" class="nav-link my-link">Photos</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Videos</a>
+              <a href="./videos.html" class="nav-link my-link">Videos</a>
             </li>
           </ul>
         </div>
@@ -48,7 +50,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-interval="100000">
             <img src="./images/ustyurt-wel.jpg" class="d-block img-fluid wel-img" alt="Usturt" />
-            <div class="carousel-caption d-none d-sm-block wel-text">
+            <div class="carousel-caption d-none d-sm-block wel-text wel-text-usturt">
               <h2>Welcome to Kungrad</h2>
               <p>
                 Ustyurt, a transboundary clay desert, faces east of Kungrad.
@@ -57,10 +59,10 @@
           </div>
           <div class="carousel-item" data-interval="100000">
             <img src="./images/my-slider2.jpg" class="d-block img-fluid wel-img" alt="Kungrad" />
-            <div class="carousel-caption d-none d-sm-block wel-text">
+            <div class="carousel-caption d-none d-sm-block wel-text wel-text-gov py-0">
               <h2>Welcome to Kungrad</h2>
               <p>
-                The place that has unique culture, traditions, people and even
+                The place that has an unique culture, traditions, people and even
                 climate comparing to other sites.
               </p>
             </div>
@@ -72,7 +74,7 @@
               class="d-block img-fluid wel-img"
               alt="Kungrad"
             />
-            <div class="carousel-caption d-none d-sm-block wel-text">
+            <div class="carousel-caption d-none d-sm-block wel-text wel-text-plant">
               <h2>Welcome to Kungrad</h2>
               <p>
                 The plant "UzKorGaz Chemical" is one of the largest plants in
@@ -117,14 +119,19 @@
           </p>
         </div>
         <div class="col-lg-4">
+          <a href="./images/my-kk-map.jpg" data-lightbox="image-1" data-title="Kungrad map">
            <img class="g-map img-fluid" src="./images/my-kk-map.jpg" alt="Kungrad map" />
+          </a>
         </div>
       </div>
 
       <div class="row mb-3 mt-2">
         <div class="col-lg-6 mb-4">
-        <img src="./images/my-school36.jpg" class="img-fluid ed-pics mb-1" alt="School 36"/>
-        <img src="./images/my-lesson.jpg"   class="img-fluid ed-pics"      alt="My Lesson"/>
+        <a href="./images/my-school36.jpg" data-lightbox="image-1" data-title="School 36">
+        <img src="./images/my-school36.jpg" class="img-fluid ed-pics mb-1" alt="School 36"/></a>
+        <a href="./images/my-lesson.jpg" data-lightbox="image-1" data-title="At lesson">
+        <img src="./images/my-lesson.jpg"   class="img-fluid ed-pics"      alt="At Lesson"/>
+        </a>
         </div>
         
         <div class="col-lg-6">
@@ -148,25 +155,22 @@
     </div>
     </section>
     <div class="container pl-0 pr-0 justify-content-center">
-      <iframe
-        class="m-auto d-block pt-2 kun-video"
-        src="https://www.youtube.com/embed/dhyNEVUYMug"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p class="text-center">A cool song about Kungrad</p>
+      <video controls class="main-video" poster="./video/poster-video.jpg">
+        <source src="./video/kungrad video2.mp4" type="video/mp4">
+      </video>
+
     </div>
     <section class="container pl-0 pr-0">
       <div class="row">
         <div class="col-md-6 col-xl-4">
           <div class="card mb-3">
+            <a href="./images/thumbnails/brown-horse-lg.jpg" data-lightbox="image-1" data-title="Brown Horse">
             <img
               src="./images/brown-horse.jpg"
               alt="Brown Horse"
               class="card-img-top img-fluid mx-auto d-block"
             />
+            </a>
             <div class="card-body">
               <div class="card-header lead text-sm-center">The meaning</div>
               <div class="card-text">
@@ -178,11 +182,13 @@
         </div>
         <div class="col-md-6 col-xl-4">
           <div class="card mb-3">
+            <a href="./images/thumbnails/kara-lg.jpg" data-lightbox="image-1" data-title="Karakalpakstan">
             <img
               src="./images/kara.jpg"
               alt="Karakalpakstan"
               class="card-img-top img-fluid mx-auto d-block"
             />
+            </a>
             <div class="card-body">
               <div class="card-header lead text-sm-center">
                 Village on the border
@@ -197,11 +203,13 @@
         </div>
         <div class="col-md-6 col-xl-4">
           <div class="card mb-3">
+            <a href="./images/thumbnails/mayor-lg.jpg" data-lightbox="image-1" data-title="The Mayor">
             <img
               src="./images/mayor.jpg"
               alt="The Mayor"
               class="card-img-top img-fluid mx-auto d-block"
             />
+            </a>
             <div class="card-body">
               <div class="card-header lead text-sm-center">Administration</div>
               <div class="card-text">
@@ -214,11 +222,13 @@
 
         <div class="col-md-6 col-xl-4">
           <div class="card md-3">
+            <a href="./images/thumbnails/airport-lg.jpg" data-lightbox="image-1" data-title="The Airport">
             <img
               src="./images/airport.jpg"
               alt="The Airport"
               class="card-img-top img-fluid mx-auto d-block"
             />
+            </a>
             <div class="card-body">
               <div class="card-header lead text-sm-center">The Airway</div>
               <div class="card-text">
@@ -230,11 +240,13 @@
         </div>
         <div class="col-md-6 col-xl-4">
           <div class="card mb-3">
+            <a href="./images/thumbnails/tolegen-lg.jpg" data-lightbox="image-1" data-title="Tolegen Aybergenov">
             <img
               src="./images/tolegen.jpg"
               alt="Tolegen Aybergenov"
               class="card-img-top img-fluid mx-auto d-block"
             />
+            </a>
             <div class="card-body">
               <div class="card-header lead text-sm-center">Famous people</div>
               <div class="card-text">
@@ -246,11 +258,13 @@
         </div>
         <div class="col-md-6 col-xl-4">
           <div class="card mb-3">
+            <a href="./images/thumbnails/sharipov-lg.jpg" data-lightbox="image-1" data-title="Sharipov">
             <img
               src="./images/sharipov.jpg"
-              alt="Brown Horse"
+              alt="Sharipov"
               class="card-img-top img-fluid mx-auto d-block"
             />
+            </a>
             <div class="card-body">
               <div class="card-header lead text-sm-center">
                 DScTech and Academic
@@ -296,16 +310,16 @@
         <div class="collapse navbar-collapse footer-nav" id="myNavbar">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a href="#" class="nav-link">Home</a>
+              <a href="./index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">History</a>
+              <a href="./history.html" class="nav-link">History</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Photos</a>
+              <a href="./photos.html" class="nav-link">Photos</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Videos</a>
+              <a href="./videos.html" class="nav-link">Videos</a>
             </li>
           </ul>
         </div>
@@ -321,7 +335,7 @@
           <li>
             <a href="https://kungrad.com/" target="_blank">Kungrad.com</a>
           </li>
-          <li><a href="#" target="_blank">Hotel</a></li>
+          <li><a href="https://yandex.uz/maps/org/hotel_oasis/177236143679/?ll=58.820017%2C43.057847&z=17" target="_blank">Hotel</a></li>
           <li><a href="#" target="_blank">Food</a></li>
           <li>
             <a href="https://www.instagram.com/kungrad_insta/" target="_blank"
@@ -354,7 +368,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./bootstrap-4.6/js/bootstrap.min.js"></script>
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3xWbdInlJk8_20W04VoWKIzE9gHafXwM&callback=initMap"></script> -->
+    <script src="./lightbox.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

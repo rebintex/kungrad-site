@@ -26,7 +26,7 @@
 
 
 body {
-    background-color: rgb(187, 255, 240);
+    background-color: #e6fff9;
     font-family: 'Lato-Light';
 }
 
@@ -35,6 +35,12 @@ body {
 	font-size: 1.5rem;
 	font-weight: 500;
 }
+
+.my-link {
+	font-size: 1.6rem;
+	
+}
+
 .carousel-inner {
 	position: relative;
 }
@@ -48,14 +54,47 @@ body {
 
 .wel-text {
 	font-size: 1.4rem;
-	margin-top: 20px;
 	position: absolute;
-	left: 37%;
-    top: 35%;
-    width: 30%;
-	color: #00ffff;
+	border-radius: 8px;
+	color: #ffffff;
+	text-transform: uppercase;
+	transform: translate(-12%, 20%);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.wel-text h2 {
+	border-bottom: 1px solid salmon;
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 7px;
+	padding-top: 10px;
 }
 
+.wel-text p {
+	padding-top: 7px;
+}
+
+.wel-text-usturt {
+	background-color: rgba(0, 0, 0, .6);
+	left: 29%;
+	top: 30%;
+	margin-bottom: 20%;
+} 
+
+.wel-text-gov {
+	background-color: rgba(0, 0, 0, .8);
+	margin-bottom: 20%;
+	left: 29%;
+	top: 30%;
+	padding-top: 10px;
+} 
+
+.wel-text-plant {
+	background-color: rgba(0, 0, 0, .7);
+	margin-bottom: 20%;
+	left: 29%;
+	top: 30%;
+} 
 .geog-text {
 	text-align: justify;
 	font-size: 1.4rem;
@@ -75,6 +114,12 @@ body {
 	width: 95%;
 }
 
+.main-video {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 6px;
+}
 .card-img-top {
     width: 349px;
     height: 310px;
@@ -121,6 +166,39 @@ font-size: 1.3rem;
 	padding-bottom: 10px;
 }
 
+/* History page */
+
+.hist-text {
+	font-family: 'Merriweather-Regular';
+	font-size: 1.6rem;
+	color: #353535;
+	text-indent: 7px;
+	text-align: justify;
+} 
+
+.img-text {
+	font-family: 'Merriweather-Regular';
+	color: #777777;
+	font-size: .8rem;
+
+}
+
+/* Photo page */
+
+.photo-gal img {
+	
+}
+
+/* Video page */
+.videos video {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	margin-bottom: 6px;
+}
+
+
+
 
 @media screen and (max-width:320px) {
 	
@@ -140,6 +218,12 @@ font-size: 1.3rem;
 		width: 90%;
 		height: 90%;
 	}
+	.videos video {
+		
+		width: 100%;
+	
+	}
+	
 }
 
 
@@ -162,6 +246,11 @@ font-size: 1.3rem;
 		width: 90%;
 		height: 90%;
 	}
+	.videos video {
+		
+		width: 100%;
+	
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -183,7 +272,11 @@ font-size: 1.3rem;
 	.footer-nav li a {
 		font-size: .94rem;
 	}
+	.videos video {
+		
+		width: 100%;
 	
+	}
 	
 }
 
