@@ -55,7 +55,7 @@ body {
 .wel-text {
 	font-size: 1.4rem;
 	position: absolute;
-	border-radius: 8px;
+	border-radius: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
 	transform: translate(-12%, 20%);
@@ -135,8 +135,17 @@ body {
 	height: 285px;
 }
 .footer-nav a {
-font-size: 1.3rem;
+	font-size: 1.3rem;
 }
+
+.footer-links a:hover {
+
+color: #310012;
+border-bottom: 1px solid black;
+
+}
+
+
 #footer-nav {
 	background-color:#2d2b3d;
 }
@@ -164,6 +173,10 @@ font-size: 1.3rem;
 	background-color:cornflowerblue;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.linked:hover {
+	color: #2caffc;;
 }
 
 /* History page */
@@ -197,7 +210,23 @@ font-size: 1.3rem;
 	margin-bottom: 6px;
 }
 
+.videos p {
+	font-size: 1.2rem;
+	margin-left: 10%;
+	padding: 10px 0 10px;
+	margin-top: 9px;
+	margin-bottom: 2px;
+	font-weight: 600;
+	color: #536959;
+	
+}
 
+.videos p:first-child {
+	margin-top: 5px;
+	
+
+
+}
 
 
 @media screen and (max-width:320px) {
