@@ -31,7 +31,7 @@ body {
 }
 
 .my-nav-color {
-	background-color:#adb900;
+	background-color:#2d2b3d;
 	font-size: 1.5rem;
 	font-weight: 500;
 }
@@ -44,17 +44,26 @@ body {
 .carousel-inner {
 	position: relative;
 }
+.wel-img-parent {
+	padding: 0 0 58% 0;
+	overflow: hidden;
+	position: relative;
+
+}
 .wel-img {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	
 	width: 100%;
-	height: 600px;
+    height: 100%;
+    object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	
 }
 
 .wel-text {
 	font-size: 1.4rem;
-	position: absolute;
 	border-radius: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -76,14 +85,15 @@ body {
 
 .wel-text-usturt {
 	background-color: rgba(0, 0, 0, .6);
+	height: fit-content;
 	left: 29%;
 	top: 30%;
-	margin-bottom: 20%;
+	
 } 
 
 .wel-text-gov {
 	background-color: rgba(0, 0, 0, .8);
-	margin-bottom: 20%;
+	height: fit-content;
 	left: 29%;
 	top: 30%;
 	padding-top: 10px;
@@ -91,7 +101,7 @@ body {
 
 .wel-text-plant {
 	background-color: rgba(0, 0, 0, .7);
-	margin-bottom: 20%;
+	height: fit-content;
 	left: 29%;
 	top: 30%;
 } 
@@ -197,7 +207,9 @@ border-bottom: 1px solid black;
 }
 
 /* Photo page */
-
+.photo-gal {
+	margin-top: 10px;
+}
 .photo-gal img {
 	
 }
@@ -223,21 +235,29 @@ border-bottom: 1px solid black;
 
 .videos p:first-child {
 	margin-top: 5px;
-	
-
 
 }
+
+.videos video:last-child {
+	margin-bottom: 15px;
+
+}
+
 
 
 @media screen and (max-width:320px) {
 	
 	.geo-title {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		padding-top: 5px;
 	}
 	.geog-text {
-		font-size: 1rem;
-		line-height: 1rem;
+		font-size: 0.8rem;
+		line-height: 0.8rem;
+		padding: 0 5px 0;
+	}
+	.ed-pics {
+		width: 100%;
 	}
 
 	#kungrad {
@@ -265,6 +285,10 @@ border-bottom: 1px solid black;
 	.geog-text {
 		font-size: 1.1rem;
 		line-height: 1.2rem;
+		padding: 0 8px 0;
+	}
+	.ed-pics {
+		width: 100%;
 	}
 
 	#kungrad {
@@ -284,6 +308,9 @@ border-bottom: 1px solid black;
 
 @media screen and (max-width:768px) {
 	
+	.wel-text {
+		font-size: 1rem;
+	}
 	.geo-title {
 		font-size: 1.6rem;
 		padding-top: 5px;
@@ -291,6 +318,10 @@ border-bottom: 1px solid black;
 	.geog-text {
 		font-size: 1.3rem;
 		line-height: 1.5rem;
+		padding: 0 6px 0;
+	}
+	.ed-pics {
+		width: 100%;
 	}
 
 
@@ -311,6 +342,25 @@ border-bottom: 1px solid black;
 
 @media screen and (max-width:1024px) {
 	
+	.wel-text-usturt {
+		
+		left: 29%;
+		top: 12%;
+		
+	} 
+	
+	.wel-text-gov {
+		
+		left: 29%;
+		top: 10%;
+	
+	} 
+	
+	.wel-text-plant {
+		
+		left: 29%;
+		top: 10%;
+	} 
 	.geo-title {
 		font-size: 1.9rem;
 		padding-top: 5px;
